@@ -1,0 +1,40 @@
+﻿<Window x:Class="DemoExamen_2.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoExamen_2"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="367">
+    <StackPanel>
+        <StackPanel>
+            <TextBlock x:Name="id_txt" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="ID:" FontSize="22" VerticalAlignment="Top" Width="52"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="title_txt" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Название:" FontSize="22" VerticalAlignment="Top" />
+            <TextBox x:Name="title_box" HorizontalAlignment="Left"  Width="150px" Height="30"  Text="" VerticalAlignment="Center" Margin="80 0 0 0"  />
+
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="description_txt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Описание:" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+            <TextBox x:Name="description_box" Width="150px" Height="30"  TextWrapping="Wrap" Text="" Margin="75 0 0 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="manufacturer_txt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Производитель:" FontSize="22" VerticalAlignment="Top"  RenderTransformOrigin="0.5,0.5" />
+            <ComboBox x:Name="manufacturer_box" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Margin="20 0 0 0"/>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="cost_txt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Стоимость:" FontSize="22" VerticalAlignment="Top"/>
+            <TextBox x:Name="cost_box" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"  Width="150px" Height="30" Margin="70 0 0 0"/>
+        </StackPanel>
+
+
+        <Label Content=""></Label>
+        <Image x:Name="main_image" HorizontalAlignment="Left" Height="112" VerticalAlignment="Top" Width="120" MouseDown="main_image_MouseDown"/>
+        <Label Content=""/>
+        <Button x:Name="final_button" Content="Добавить" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="36" Width="150" Click="Button_Click"/>
+        
+    </StackPanel>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Окно авторизации" Height="230" Width="189" MinHeight="280" MaxHeight="280" MinWidth="189">
+    <Grid>
+        <Image x:Name="img" Height="Auto" Margin="59,67,54,106" Source="/background.png" Stretch="Fill" Visibility="Collapsed"/>
+        <Button x:Name="login_btn" Content="Войти" HorizontalAlignment="Center"  VerticalAlignment="Top" Click="Button_Click" Width="52" Margin="0,154,0,0"/>
+        <TextBox x:Name="password_txt" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="41,108,0,0"/>
+        <Label Content="Логин" Width="100px" VerticalAlignment="Top" Margin="37,45,52,0"/>
+        <Label Content="Пароль" Width="100px" Height="25px" Margin="36,85,53,134"/>
+        <TextBox x:Name="login_txt" HorizontalAlignment="Left" Margin="40,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="auth_txt" Content="Авторизация" HorizontalAlignment="Center" Margin="0,9,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="captcha"  VerticalAlignment="Top" Text="" Margin="69,117,58,73"  Visibility="Collapsed"/>
+        <Label x:Name="captcha_lbl"  VerticalAlignment="Top" Content="Капча" Margin="72,27,73,159"  Visibility="Collapsed"/>
+        <Button x:Name="captcha_btn"  VerticalAlignment="Top" Content="Готово" Margin="77,151,68,42" Visibility="Collapsed"/>
+        <TextBlock x:Name="captcha_txt"   Margin="75,65,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Visibility="Collapsed"/>
+    </Grid>
+</Window>
